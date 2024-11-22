@@ -58,11 +58,7 @@
           <v-card-title class="headline">Editar Vehículo</v-card-title>
           <v-card-text>
             <v-form @submit.prevent="updateCar">
-              <v-text-field
-                v-model="carToEdit.nombre"
-                label="Nombre"
-                required
-              ></v-text-field>
+            
               <v-text-field
                 v-model="carToEdit.marca"
                 label="Marca"
