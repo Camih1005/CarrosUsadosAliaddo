@@ -1,12 +1,13 @@
 <script setup>
 import  NavStyle  from "../components/NavStyle.vue";
+import MantenimientoPage from "@/components/MantenimientoPage.vue";
 
 </script>
 
 <template>
   <div class="admin">
     <NavStyle/>
-
+<MantenimientoPage/>
     
 
 

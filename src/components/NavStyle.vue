@@ -17,10 +17,11 @@
     },
     {
       text: 'Autos',
-      
+      url: '/ventas'
     },
     {
       text: 'Servicios',
+      url: '/ventas'
       
     },
     {
