@@ -1,3 +1,4 @@
+<!-- Aqui se muestra Todo lo relacionado co  el crud del administrador de la pagina -->
 <template>
     <v-container>
       <h1 class="text-h3 mb-6 text-center">Administración de Vehículos</h1>

@@ -10,7 +10,7 @@
         id="about" 
       />
     
-      <!-- tarjetas -->
+
       <v-slide-group v-model="model" class="pa-4" show-arrows>
         <v-slide-group-item 
           v-for="(item, index) in filteredCars" 
@@ -24,7 +24,7 @@
             width="100" 
             @click="toggleExpansion(item)"
           >
-            <!-- Imagen de la API -->
+
             <v-img 
               v-if="item.imagen" 
               :src="item.imagen" 
@@ -40,11 +40,11 @@
         </v-slide-group-item>
       </v-slide-group>
     
-      <!-- Expansión con el modelo seleccionado -->
+      <!-- Expansión con el modelo seleccionado :D-->
       <v-expand-transition>
         <v-sheet v-if="expandedCar" height="300" class="pa-4">
           <v-row>
-            <!-- Imagen del vehículo a un lado cuando se expande -->
+          
             <v-col cols="12" md="6" class="d-flex align-center">
               <v-img 
                 v-if="expandedCar.imagen" 
@@ -55,7 +55,7 @@
               />
             </v-col>
     
-            <!-- Detalles del vehículo a la derecha -->
+            
             <v-col cols="12" md="6">
               <div class="d-flex flex-column align-center justify-center">
                 <h3>{{ expandedCar.nombre }}</h3>
@@ -63,7 +63,7 @@
                 <p><strong>Marca:</strong> {{ expandedCar.marca }}</p>
                 <p><strong>Año:</strong> {{ expandedCar.año }}</p>
                 <p><strong>Precio:</strong> ${{ expandedCar.valor }}</p>
-                <v-btn @click="openModal(expandedCar)">Pedir Test Drive</v-btn>
+                <v-btn class="bg-red " :click="openModal(expandedCar)">Pedir Test Drive</v-btn>
                 <img 
                   src="https://tiendaonlinemini.vtexassets.com/arquivos/SellosLegales-Cortos-Negros-sin-colision.png" 
                   height="100" 

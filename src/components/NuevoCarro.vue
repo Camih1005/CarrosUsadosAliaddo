@@ -87,9 +87,9 @@
   
   <script setup>
   import { ref } from 'vue';
-  import { useFetch } from '../Apis/Api'; // Asegúrate de que la ruta sea correcta
+  import { useFetch } from '../Apis/Api';
   
-  const { list } = useFetch(); // Usamos el método 'list' en lugar de 'create'
+  const { list } = useFetch(); 
   
   const dialog = ref(false);
   const form = ref(null);
@@ -131,7 +131,6 @@
         resetForm();
       } catch (error) {
         console.error('Error al agregar el carro:', error);
-        // Aquí podrías manejar el error, por ejemplo, mostrando un mensaje al usuario
       }
     }
   };

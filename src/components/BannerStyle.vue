@@ -1,13 +1,12 @@
 <script setup>
 import { ref } from 'vue'
 
-// Ref para almacenar los objetos con imágenes y GIFs
 const items = ref([
   {
     id: 1,
-    type: 'image', // Puedes usar 'image' o 'gif' para diferenciar el tipo
-    desktopSrc: 'https://www.toyota.com.co/wp-content/uploads/2024/09/banner-desktop-acc-prado.jpg', // URL de la imagen de escritorio
-    mobileSrc: 'https://www.toyota.com.co/wp-content/uploads/2024/09/banner-mobile-acc-prado.jpg', // URL de la imagen móvil
+    type: 'image',
+    desktopSrc: 'https://www.toyota.com.co/wp-content/uploads/2024/09/banner-desktop-acc-prado.jpg',
+    mobileSrc: 'https://www.toyota.com.co/wp-content/uploads/2024/09/banner-mobile-acc-prado.jpg', 
     alt: 'Imagen 1'
   },
   {
@@ -31,7 +30,7 @@ const items = ref([
     mobileSrc: 'https://www.ford.com.co/content/dam/Ford/website-assets/latam/co/homepage/secondary-billboards/fco-homepage-billboard-electricos.jpg/jcr:content/renditions/small.jpeg',
     alt: 'GIF 2'
   },
-  // Agrega más elementos según sea necesario
+
 ])
 </script>
 
@@ -39,15 +38,15 @@ const items = ref([
   <div class="carousel-container">
     <p class="text-center" v-if="!items.length">Loading...</p>
 
-    <!-- Mostrar carrusel solo si hay elementos disponibles -->
+    <!-- Mostrar carrusel solo si hay elementos disponibles :D -->
     <v-carousel v-if="items.length" show-arrows="hover">
-      <!-- Iteramos sobre la lista de elementos (imágenes y gifs) -->
+      
       <v-carousel-item
         v-for="item in items"
         :key="item.id"
         class="carousel-item"
       >
-        <!-- Mostrar imagen o gif según el tipo y el tamaño de la pantalla -->
+      
         <img v-if="item.type === 'image'" :src="item.desktopSrc" :alt="item.alt" class="carousel-image desktop-image"/>
         <img v-if="item.type === 'image'" :src="item.mobileSrc" :alt="item.alt" class="carousel-image mobile-image"/>
         <img v-if="item.type === 'gif'" :src="item.desktopSrc" :alt="item.alt" class="carousel-image desktop-image"/>
@@ -55,7 +54,7 @@ const items = ref([
       </v-carousel-item>
     </v-carousel>
 
-    <!-- Mensaje si no hay elementos disponibles -->
+    <!-- Else por si no hay carros disponibles -->
     <div v-else class="text-center">
       <p>No hay elementos disponibles.</p>
     </div>
@@ -67,8 +66,8 @@ const items = ref([
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%; /* Asegura que ocupe todo el ancho disponible */
-  height: 80dvh; /* Asegura que el contenedor tenga una altura de 100dvh */
+  width: 100%; 
+  height: 80dvh; 
   background-color: rgba(219, 219, 219, 0.078);
 }
 
@@ -78,16 +77,15 @@ const items = ref([
   color: gray;
 }
 
-/* Estilo para asegurar que las imágenes y GIFs tengan el mismo tamaño */
 .carousel-item {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%; /* Hace que cada item ocupe todo el ancho del contenedor */
-  height: 100%; /* Asegura que el carrusel ocupe toda la altura disponible */
+  width: 100%; 
+  height: 100%; 
 }
 
-/* Estilo para las imágenes de escritorio */
+
 .desktop-image {
   display: block;
 }
@@ -96,7 +94,7 @@ const items = ref([
   display: none;
 }
 
-/* Estilo para las imágenes móviles */
+
 @media (max-width: 768px) {
   .desktop-image {
     display: none;
@@ -106,11 +104,11 @@ const items = ref([
   }
 }
 
-/* Estilo de la imagen para que se ajuste y se centre correctamente */
+
 .carousel-image {
-  width: 100%; /* Hace que la imagen ocupe todo el ancho del contenedor */
-  height: 100%; /* Hace que la imagen ocupe toda la altura disponible */
-  object-fit: cover; /* Asegura que la imagen ocupe todo el espacio sin perder relación de aspecto */
+  width: 100%;
+  height: 100%; 
+  object-fit: cover; 
 
 }
 </style>

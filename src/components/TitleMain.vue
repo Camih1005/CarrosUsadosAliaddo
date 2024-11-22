@@ -1,6 +1,6 @@
 <template>
   <div class="d-flex justify-center align-center ">
-    <h1 class="me-4">USADOS CH</h1>
+    <!-- <h1 class="me-4">USADOS CH</h1> -->
     <v-img 
       class="rounded-circle"
       max-width="80"
@@ -12,7 +12,11 @@
 
 <style scoped>
 h1 {
-  font-size: 1.5rem;
-  font-weight: bold;
+  font-family: "Funnel Display", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 800;
+  color: rgb(73, 13, 13);
+
 }
 </style>

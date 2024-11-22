@@ -1,8 +1,8 @@
 <template>
-  <!-- Contenedor principal con borde -->
+
    <div id ="inventory"></div>
   <v-container class="pa-sm-6 pa-md-12 border rounded-lg" fluid>
-    <!-- Sección principal de bienvenida -->
+
     <v-responsive class="text-center mx-auto border rounded-lg pa-4" max-width="700">
       <p class="font-weight-medium text-primary">Compra tu auto usado de forma segura</p>
 
@@ -16,7 +16,7 @@
         de marcas y modelos. ¡Conduce tu auto ideal hoy mismo!
       </p>
 
-      <!-- Botón principal con acción -->
+    
       <v-btn
         color="primary"
         class="mt-4 text-white"
@@ -35,7 +35,7 @@
         cols="12"
         md="4"
       >
-        <!-- Cada característica con borde -->
+       
         <v-responsive class="mx-auto border rounded-lg pa-4" max-width="500" width="100%">
           <v-list-item
             class="px-0"
@@ -54,7 +54,7 @@
               </p>
             </template>
 
-            <!-- Botón de acción dentro de cada característica -->
+          
             <v-chip
               append-icon="mdi-arrow-right"
               class="mt-6"
@@ -157,10 +157,10 @@ export default {
 
 <style scoped>
 .text-primary {
-  color: #ff00006c; /* Azul representativo */
+  color: #ff00006c; 
 }
 
-/* Opcional: estilo adicional para bordes */
+
 .border {
   border: 2px solid #3d3d3d63;
 }

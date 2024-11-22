@@ -58,8 +58,8 @@
   
   <style scoped>
   .slider {
-    width: 90vw;  /* El ancho del slider */
-    height: 120px; /* Altura fija para las imágenes */
+    width: 90vw;  
+    height: 120px; 
     margin: auto;
     overflow: hidden;
   }
@@ -67,22 +67,22 @@
   .slider .slide-track {
     display: flex;
     animation: scroll 30s linear infinite;
-    width: calc(200px * 14);  /* Ancho total del contenido desplazable (200px por cada imagen) */
+    width: calc(200px * 14);  
   }
   
   .slider .slide {
-    width: 200px;  /* Ancho fijo para cada imagen */
-    height: 100%;  /* Asegura que cada contenedor tenga la misma altura */
+    width: 200px; 
+    height: 100%; 
     display: flex;
     justify-content: center;
-    align-items: center;  /* Centra la imagen dentro del contenedor */
+    align-items: center; 
   }
   
   .slider .slide img {
-    width: 100px;  /* Hace que la imagen ocupe todo el ancho del contenedor */
-    height: 100px;  /* Hace que la imagen ocupe toda la altura del contenedor */
+    width: 100px;  
+    height: 100px; 
     object-fit: contain; 
-    padding: 5px; /* Asegura que la imagen no se deforme y se ajuste al contenedor */
+    padding: 5px; 
   }
   
   @keyframes scroll {
@@ -90,7 +90,7 @@
       transform: translateX(0);
     }
     100% {
-      transform: translateX(calc(-200px * 7)); /* Desplazamiento hacia la izquierda por la cantidad de imágenes */
+      transform: translateX(calc(-200px * 7)); 
     }
   }
   </style>

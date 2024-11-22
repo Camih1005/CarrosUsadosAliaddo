@@ -4,7 +4,7 @@
   const drawer = shallowRef(false)
 //   //RECORDAR : Esto está intentando usar el name de cada objeto en el array items, pero si la propiedad url en el array no corresponde con los nombres de las rutas definidas en el router, entonces Vue Router no encontrará ninguna ruta coincidente.
 
-// los nombres de las rutas en items coincidan con los nombres de las rutas en tu configuración de Vue Router
+// los nombres de las rutas en items coincidan con los nombres de las rutas en la configuración de Vue Router
   const items = [
   
     {
