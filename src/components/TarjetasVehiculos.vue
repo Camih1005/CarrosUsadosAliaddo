@@ -63,7 +63,7 @@
                 <p><strong>Marca:</strong> {{ expandedCar.marca }}</p>
                 <p><strong>Año:</strong> {{ expandedCar.año }}</p>
                 <p><strong>Precio:</strong> ${{ expandedCar.valor }}</p>
-                <v-btn class="bg-red " :click="openModal(expandedCar)">Pedir Test Drive</v-btn>
+                <v-btn @click="openModal(expandedCar)"  class="bg-red">Pedir Test Drive</v-btn>
                 <img 
                   src="https://tiendaonlinemini.vtexassets.com/arquivos/SellosLegales-Cortos-Negros-sin-colision.png" 
                   height="100" 

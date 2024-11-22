@@ -124,28 +124,28 @@ export default {
   methods: {
     goToInventory() {
       // Navegar al inventario completo
-      this.$router.push("/inventory");
+      this.$router.push("/");
     },
     handleAction(action) {
       // Acciones según el botón clicado
       switch (action) {
         case "exploreInventory":
-          this.$router.push("/inventory");
+          this.$router.push("/");
           break;
         case "applyFinancing":
-          this.$router.push("/financing");
+          this.$router.push("/");
           break;
         case "viewWarranty":
-          this.$router.push("/warranty");
+          this.$router.push("/");
           break;
         case "sellCar":
-          this.$router.push("/sell");
+          this.$router.push("/");
           break;
         case "viewTechnical":
-          this.$router.push("/technical-review");
+          this.$router.push("/");
           break;
         case "contactAdvisor":
-          this.$router.push("/contact");
+          this.$router.push("/");
           break;
         default:
           console.warn("Acción no definida:", action);
